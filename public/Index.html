@@ -1,11 +1,36 @@
 <html>
   <head>
-    <title>
-      Curso JS ES6+
-    </title>
+    <meta charset="UTF-8" />
+    <title>Search Repository</title>
+    <link rel="icon" href="./img/rocketseat16.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <button id="novoTodo">Adicionar</button>
+    <header id="main-header">
+      <label for="RocketHub">RocketHub</label>
+    </header>
+
+    <div id="new-repo">
+      <form id="repo-form" class="go-bottom">
+        <div>
+          <input
+            id="repo-input"
+            type="text"
+            name="repository"
+            placeholder=" "
+          />
+          <label for="name">Repository</label>
+          <button type="submit">Include</button>
+        </div>
+      </form>
+    </div>
+    <div id="div-list">
+      <ul id="repo-list" class="ulContainer"></ul>
+    </div>
+    <footer id="main-footer">
+      <label for="by">By:Marcos Murillo</label>
+      <label for="curse">JavaScript Starter ES6+ from RocketSeat</label>
+    </footer>
     <script src="./bundle.js"></script>
   </body>
 </html>
